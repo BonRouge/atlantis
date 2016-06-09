@@ -16,11 +16,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
+//var app = {
     // Application Constructor
-    initialize: function() {
+   // initialize: function() {
     //    this.bindEvents();
-    },
+  //  },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
