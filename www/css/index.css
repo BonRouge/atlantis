@@ -24,9 +24,9 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
+   /* background-color:#E4E4E4; 
     background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+   background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%); 
     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-gradient(
         linear,
@@ -36,12 +36,16 @@ body {
         color-stop(0.51, #E4E4E4)
     );
     background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+	    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	
+	*/
+	
+    font-family:'Times New Roman', serif;
+    font-size:100%;
     height:100%;
-    margin:0px;
+    margin:1em;
     padding:0px;
-    text-transform:uppercase;
+  /*  text-transform:uppercase; */
     width:100%;
 }
 
@@ -71,7 +75,7 @@ body {
 
 h1 {
     font-size:24px;
-    font-weight:normal;
+    font-weight:bold;
     margin:0px;
     overflow:visible;
     padding:0px;
@@ -112,4 +116,262 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+
+
+/*default version*/
+@font-face {
+	font-family: "Imprint MT Shadow", "MS Mincho", "ＭＳ 明朝";
+	src: url('IMPRISHA.TTF'),
+		local('Imprint MT Shadow'),	
+		format('truetype');
+}
+
+h1, h2, h3, h4 {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align:center;
+	font-family:"Imprint MT Shadow";
+	font-weight:bold;
+}
+
+.radius5 {
+		border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+
+h1 {
+	font-size: x-large;
+	text-align:center;
+}
+
+h2 {
+	font-size:150%;
+}
+
+section {
+	max-width:35em;
+	margin:auto;
+}
+
+ul {
+	list-style-type:none;
+	padding-left:0;
+	margin-left:0;
+}
+li {
+	margin:0.5em 0;
+	padding:0.5em;
+}
+#home {
+	width:100%;
+	
+}
+.lList {
+	
+	margin:auto;
+
+	text-align:center;
+}
+#lLists {
+	width:20em;
+	margin:auto;
+}
+#lList1 {
+	float:left;
+}
+#lList2 {
+	float:right;
+}
+
+
+.lList li {
+	width:6em;
+	height:1.2em;
+	margin-bottom:0.2em;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+	background-color: #699DB6; 
+	/* background-color: #0570fa; */		
+	border-color: rgba(0,0,0,0.3);
+ background: linear-gradient(to bottom, #699DB6 50%, navy 100%);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+  text-shadow: 0 1px #ccc;
+	color: #FFF;
+	cursor:pointer;
+	font-weight:normal;
+	font-size:130%;
+}
+.lList li:hover {
+	 background: linear-gradient(to bottom, navy 50%, #699DB6 100%);
+}
+p {
+	font-size:120%;
+}
+
+#left, #right {
+	height:10%;
+	width:10%;
+}
+#left {
+	position:fixed;
+	left:0;
+	top:40%;
+}
+#right {
+	position:fixed;
+	right:0;
+	top:40%;
+}
+#up {
+position:fixed;
+top:0; 
+left:0;
+width:4em;	
+}
+
+span:hover {
+	cursor:pointer;
+	color:blue;
+}
+
+#L1_p1_aud {
+	width:30em;
+	margin:auto;
+	display:block;
+}
+
+.playing {
+	background:#ffffdd;
+}
+
+h3 {
+	cursor:pointer;
+}
+h3:hover {
+	color:navy;
+	background:blue;
+	color:white;
+	border-radius:5px;
+}
+
+
+dialog dd {
+	
+	margin-left:5em;
+	margin-bottom:0.5em;
+	height:1em;
+	position:relative;
+	top:-1.5em;
+
+}
+dialog dt {
+	font-weight:bold;
+	margin:0;
+	margin-bottom:0.5em;
+		height:1em;
+
+}
+.dialog td{
+	vertical-align:top;
+}
+
+.speaker {
+	font-weight:bold;
+}
+.speech {
+	padding-left:1em;
+}
+
+#L1 h2, #L1 .p5 h3 {
+	background: rgb(0,102,0);
+	color:white;
+}
+#L2 h2, #L2 .p5 h3 {
+	background: rgb(0,0,204);
+	color:white;
+}
+#L2 h2 {
+	font-size:130%;
+}	
+#L3 h2, #L3 .p5 h3 {
+	background: rgb(102,0,102);
+	color:white;
+}
+#L4 h2, #L4 .p5 h3 {
+	background: rgb(204,0,0);
+	color:white;
+}
+
+#R1 h2, #R1 .p5 h3 {
+	background: rgb(113,140,44);
+	color:white;
+}
+
+#L5 h2, #L5 .p5 h3 {
+	background: rgb(102,51,0);
+	color:white;
+}
+
+#L6 h2, #L6 .p5 h3 {
+	background: rgb(255,102,0);
+	color:white;
+}
+
+#L7 h2, #L7 .p5 h3 {
+	background: rgb(24,148,127);
+	color:white;
+}
+
+#L8 h2, #L8 .p5 h3 {
+	background: rgb(81,53,68);
+	color:white;
+}
+
+#R2 h2, #R2 .p5 h3 {
+	background: rgb(113,140,44);
+	color:white;
+}
+
+#L9 h2, #L9 .p5 h3 {
+	background: rgb(0,128,0);
+	color:white;
+}
+
+#L10 h2, #L10 .p5 h3 {
+	background: rgb(204,0,204);
+	color:white;
+}
+
+
+h2 {
+	border-radius:5px;
+}
+
+.p1 h3{
+	background: rgb(0,0,204);
+	color:white;
+}
+
+.p2 h3{
+	background: rgb(103,51,0);
+	color:white;
+
+}
+
+.p3 h3{
+	background: rgb(102,0,102);
+	color:white;
+}
+
+.p4 h3{
+	background: rgb(0,102,102);
+	color:white;
 }
