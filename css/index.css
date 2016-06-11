@@ -160,6 +160,8 @@ h2 {
 section {
 	max-width:35em;
 	margin:auto;
+	 -webkit-transition: ease-in-out, display .35s ease-in-out; /* Safari 3.1 to 6.0 */
+    transition: ease-in-out, display .35s ease-in-out;
 }
 
 ul {
@@ -218,8 +220,21 @@ li {
 	 background: linear-gradient(to bottom, navy 50%, #699DB6 100%);
 }
 p {
-	font-size:120%;
+
 	text-indent:2em;
+
+}
+
+p, .dialog {
+	font-size:130%;
+	line-height:160%;
+text-align: justify;
+   /* text-justify: inter-word; */
+}
+
+h1 {
+	
+	line-height:120%;	
 }
 
 #left, #right {

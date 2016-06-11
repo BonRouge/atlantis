@@ -767,7 +767,7 @@ Of course.  I didn’t have the courage to disobey my father.</td></tr>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>	
     <script type="text/javascript">
-     //   app.initialize();
+      // app.initialize();
 		//var sections = new Array();
 		
 		//build menu
@@ -800,22 +800,43 @@ Of course.  I didn’t have the courage to disobey my father.</td></tr>
 		}
 		*/
 		
+function stopAudio() {
+	$("audio").each(function() {
+		this.pause();
+		this.currentTime = 0;
+		});
+	$("span").removeClass("playing");
+		
+	
+	/*
+	for (k=0; k<auds.length; k++) {
+		auds[k].pause();
+		auds[k].currentTime=0;
+		document.getElementById(audSpansArray[k]).className = "";
+	}
+	*/
+}
+		
 		
 		
 		function goTo(el) {
-			
+				stopAudio();
 						
 		
 			dEl = el.replace("_link","");
 
 			//showHideDivs(document.getElementById(dEl),"r");
 			
+			$("section").hide();
+			$("section").removeClass("current");
+			/*
 			secs = document.getElementsByTagName("section");
 			for (i=0; i<secs.length; i++) {
 				$(secs[i]).hide();
 				$(secs[i]).removeClass("current");
 				
 			}
+			*/
 			$('#'+dEl).show();
 			$('#'+dEl).addClass("current");
 			
@@ -854,11 +875,13 @@ Of course.  I didn’t have the courage to disobey my father.</td></tr>
 			//alert(pos);
 			//alert(lessons2[pos-1]);
 			goTo(lessons2[pos-1]);
+		
 		}
 		function right(lessons2) {
 			dcur = document.getElementsByClassName("current")[0];
 			pos = lessons2.indexOf(dcur.id);
 			goTo(lessons2[pos+1]);
+		
 		}
 		
 		
@@ -968,13 +991,8 @@ Of course.  I didn’t have the courage to disobey my father.</td></tr>
 		if (dSpan.className=="playing") {
 			pauseIt = true;
 		}
-			for (k=0; k<auds.length; k++) {
-			//alert(auds);	
-//	alert(audSpansArray[k]);			
-				auds[k].pause();
-				auds[k].currentTime=0;
-				document.getElementById(audSpansArray[k]).className = "";
-			}
+		stopAudio();
+		
 		if (!pauseIt) {	
 		dSpan.className = "playing";
 		pos = audSpansArray.indexOf(dSpan.id);
