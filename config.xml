@@ -3,6 +3,8 @@
   <description></description>
   <author href="http://atlantisenglish.com" email="steve@cheers-sendai.com">CHEERS</author>
   <content src="index.html"/>
+  <meta name="viewport" content="width=device-width" />
+  
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="14"/>
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1"/>

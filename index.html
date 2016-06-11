@@ -770,18 +770,56 @@ Of course.  I didn’t have the courage to disobey my father.</td></tr>
 		
 		//build menu
 		
+		/*
+		function showHideDivs(sec,lr) {
+				var cDiv;
+				divs = sec.getElementsByTagName("div");
+				if (divs.length>1) {
+					for(k=0; k<divs.length; k++) {
+						
+						if(divs[k].className=="cDiv") {
+							cDiv = k;
+						}
+						$(divs[k]).removeClass("cDiv");
+						$(divs[k]).addClass("ncDiv");	
+					}
+				}
+				
+				if (lr="r") {
+					if(typeof cDiv !== 'undefined') {
+						cDiv = cDiv+1;
+					}
+					else {
+						cDiv = 0;
+					}
+				}
+				$(divs[cDiv]).removeClass("ncDiv");				
+				$(divs[cDiv]).addClass("cDiv");
+		}
+		*/
 		
 		
 		
 		function goTo(el) {
+			
+						
+		
 			dEl = el.replace("_link","");
+
+			//showHideDivs(document.getElementById(dEl),"r");
+			
 			secs = document.getElementsByTagName("section");
 			for (i=0; i<secs.length; i++) {
 				$(secs[i]).hide();
 				$(secs[i]).removeClass("current");
+				
 			}
 			$('#'+dEl).show();
 			$('#'+dEl).addClass("current");
+			
+
+			
+				
 			
 			if (el == "home") {
 				$('#left').hide();
