@@ -138,7 +138,7 @@ h1, h2, h3, h4 {
 	font-family:"Imprint MT Shadow";
 	font-weight:bold;
     margin:0.5em auto;
-	padding:1em auto;
+	padding:0.3em;
 }
 
 .radius5 {
@@ -219,6 +219,7 @@ li {
 }
 p {
 	font-size:120%;
+	text-indent:2em;
 }
 
 #left, #right {
