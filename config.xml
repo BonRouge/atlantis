@@ -4,8 +4,13 @@
   <author href="http://atlantisenglish.com" email="steve@cheers-sendai.com">CHEERS</author>
   <content src="index.html"/>
 
+  <supports-screens android:anyDensity="true" android:resizeable="true" 
+    android:smallScreens="true" 
+    android:normalScreens="true" 
+    android:largeScreens="true" 
+    android:xlargeScreens="true" />
 	
-  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="DisallowOverscroll" value="false"/>
   <preference name="android-minSdkVersion" value="14"/>
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1"/>
   <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1"/>
