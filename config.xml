@@ -4,11 +4,7 @@
   <author href="http://atlantisenglish.com" email="steve@cheers-sendai.com">CHEERS</author>
   <content src="index.html"/>
 
-  <supports-screens android:anyDensity="true" android:resizeable="true" 
-    android:smallScreens="true" 
-    android:normalScreens="true" 
-    android:largeScreens="true" 
-    android:xlargeScreens="true" />
+ 
 	
   <preference name="DisallowOverscroll" value="false"/>
   <preference name="android-minSdkVersion" value="14"/>
