@@ -56,12 +56,12 @@
 		
 
 		<div id="lLists">
-		<ul id="lList1" class="lList">
+		<!--<ul id="lList1" class="lList">
 			
 		</ul>
 		<ul id="lList2" class="lList">
 		
-		</ul>
+		</ul>-->
 		</div>
 		
 	</section>
@@ -440,7 +440,7 @@ Of course.  I didn’t have the courage to disobey my father.</td></tr>
 		
 		<p>Phasellus a lobortis augue. In blandit nisi ut arcu suscipit, euismod imperdiet orci blandit. Etiam pellentesque mauris vitae accumsan pellentesque. Nulla rutrum purus massa, eu elementum nisi lobortis vel.</p>
 		
-		<h4>A Vittra school in Sweden (all photos by Kim Wendt)</h3>
+		<h4 id="vittrah4">A Vittra school in Sweden <span>(all photos by Kim Wendt)</span></h4>
 		
 		<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
 		
@@ -1013,6 +1013,24 @@ function stopAudio() {
 		lessons = [1,2,3,4,"Reading 1",5,6,7,8,"Reading 2",9,10];
 		lessons2 = new Array();
 	
+	
+	if(window.innerHeight > window.innerWidth){ 
+		dCols =3;
+	} 
+	else {
+		dCols = 2;
+	}
+	
+	for(m=1; m<dCols+1; m++) {
+		aul = document.createElement("ul");
+		aul.id ="lList"+m;
+		aul.className = "lList";
+		document.getElementById("lLists").appendChild(aul);
+	}
+	
+	
+	
+	
 		for (i=0; i<12; i++) {
 			var nl = document.createElement("LI");
 			var nlt = document.createTextNode(isNaN(lessons[i])? lessons[i] : "Lesson "+lessons[i]);
@@ -1020,10 +1038,7 @@ function stopAudio() {
 			dbase = isNaN(lessons[i])? "R"+(lessons[i].substr(8,1)) : "L"+lessons[i];
 			
 			nl.id = dbase+"_link";
-			
-	
-			
-			
+		
 			lessons2.push(dbase);
 			
 			nl.onclick= function() {
@@ -1031,11 +1046,27 @@ function stopAudio() {
 			}
 		//	alert(nl);
 			nl.appendChild(nlt);
-			if (i<6) {
-			$('#lList1').append(nl);
+			
+			if (dCols==2) {
+			
+				if (i<6) {
+				$('#lList1').append(nl);
+				}
+				else {
+				$('#lList2').append(nl);
+				}
+			
 			}
-			else {
-			$('#lList2').append(nl);
+			else if(dCols==3) {
+				if (i<4) {
+				$('#lList1').append(nl);
+				}
+				else if (i<8) {
+				$('#lList2').append(nl);
+				}
+				else {
+				$('#lList3').append(nl);				
+				}
 			}
 		}
 		

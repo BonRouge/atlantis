@@ -51,6 +51,11 @@ body {
   
 }
 
+section, #left, #right, #up {
+	display:none;
+}
+
+
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
@@ -73,6 +78,12 @@ body {
         margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
                                       /* offset horizontal: half of image width and text area width */
     }
+	#vittrah4 span {
+		display:block;
+	}
+	#lList3 {
+		border:3px solid red;
+	}
 }
 
 h1 {
