@@ -137,6 +137,9 @@
 		
 		<p>	Johnson died in 1938 at the age of 27.  Since then, many musicians, such as 60s rock guitarist Jimi Hendrix, died at the same age.  Some people think this is the curse of Robert Johnson.  
 </p>
+
+<a class="outLink radius5" href="https://youtu.be/Kxi4XkIVWLQ">&gt; &gt; Listen to "Crossroads Blues" by Robert Johnson on YouTube &lt; &lt; </a>
+
 		</div>
 		
 		<div class="p3">
@@ -149,6 +152,9 @@
 		<p>The father of jazz is Louis Armstrong.  He once said that if you start to tap your foot, it means that the music is good.  Armstrong was born in New Orleans, the birthplace of jazz.  His family was very poor, and he     got in trouble with the police.  At the age of eleven, he quit school.  But soon, he began to play the trumpet and sing.  By 1929, at the age of 28, Armstrong was a famous jazz musician.  He toured America and Europe.  </p>
 		
 		<p>Later, he became America’s goodwill ambassador.  He traveled to many countries and met important people.  His dream was to bring love and happiness to the world.</p>
+		
+		<iframe class="aVideo" width="480" height="360" src="https://www.youtube.com/embed/BhVdLd43bDI?rel=0" frameborder="0" allowfullscreen></iframe>
+		
 		</div>
 		
 		<div class="p4">
@@ -885,6 +891,9 @@ Dance Hall_Design RosanBosch_Foto Kim Wendt_tn.png"  />
     <script type="text/javascript" src="js/index.js"></script>
 	<!--    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>-->
     <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>	
+	
+	<!--<script type="text/javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>	-->
+		
    
   
     <script type="text/javascript">
@@ -1030,7 +1039,7 @@ function stopAudio() {
 	
 	
 	
-	
+	function buildNav() {
 		for (i=0; i<12; i++) {
 			var nl = document.createElement("LI");
 			var nlt = document.createTextNode(isNaN(lessons[i])? lessons[i] : "Lesson "+lessons[i]);
@@ -1070,6 +1079,11 @@ function stopAudio() {
 			}
 		}
 		
+	} 
+	// end buildNav
+		
+	
+		
 		$('#left').click(function() {
 			left(lessons2);
 		});
@@ -1086,6 +1100,7 @@ function stopAudio() {
 	for (i=0; i<audSpans.length; i++) {
 		audSpansArray.push(audSpans[i].id);
 	}
+	
 	
 	
 //	Object.prototype.insertAfter = function (newNode) { this.parentNode.insertBefore(newNode, this.nextSibling); }
@@ -1192,6 +1207,21 @@ function stopAudio() {
 			}
 		}
 	}
+	
+	buildNav();
+window.addEventListener('orientationchange', function() {
+	lListsEl = document.getElementById("lLists");
+	while(lListsEl.hasChildren) {
+		$("#lLists").remove(this.lastChild);
+	}
+	buildNav();
+	
+	});
+
+  // Initial execution if needed
+
+
+	
 	</script>
 	<!--
 	 		<script src="js/glide.js"></script>

@@ -479,3 +479,16 @@ h2 {
         .jssora22r.jssora22rdn { background-position: -310px -31px; }
 
 		/* end jssora */
+		
+		
+
+.aVideo {
+	margin:2em auto;
+}
+.outLink {
+	margin:1em auto;
+	display:block;
+	background:lightblue;
+	text-align:center;
+	color:navy;
+}
