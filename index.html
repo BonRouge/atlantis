@@ -1026,14 +1026,15 @@ function stopAudio() {
 	
 	
 	
-	
+	 
 	
 	
 	function buildNav() {
 	
-		if(window.innerHeight < window.innerWidth){ 
+		if(window.innerHeight < window.innerWidth || screen.orientation=="landscape"){ 
 			dCols =3;
 			document.getElementsByTagName("BODY")[0].className="landscape";
+			alert(screen.orientation());
 		} 
 		else {
 			dCols = 2;
