@@ -978,11 +978,13 @@ function stopAudio() {
 				$('#left').hide();
 				$('#right').hide();
 				$('#up').hide();
+				screen.orientation.lock("portrait");
 			}
 			else {
 				$('#left').show();
 				$('#right').show();
 				$('#up').show();
+				screen.orientation.unlock();
 			}
 			
 			if (dEl=="L10") {
