@@ -1031,15 +1031,16 @@ function stopAudio() {
 	
 	function buildNav() {
 	
-		if(window.innerHeight < window.innerWidth || screen.orientation=="landscape"){ 
+		if(window.innerHeight < window.innerWidth || window.screen.orientation=="landscape"){ 
 			dCols =3;
 			document.getElementsByTagName("BODY")[0].className="landscape";
-			alert(screen.orientation());
+			alert(window.screen.orientation);
 		} 
 		else {
 			dCols = 2;
 			
 			document.getElementsByTagName("BODY")[0].className="portrait";
+						alert(window.screen.orientation);
 		}
 	
 	for(m=1; m<dCols+1; m++) {
