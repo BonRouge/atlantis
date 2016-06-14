@@ -81,9 +81,7 @@ section, #left, #right, #up {
 	#vittrah4 span {
 		display:block;
 	}
-	#lList3 {
-		border:3px solid red;
-	}
+	
 }
 
 h1 {
@@ -195,16 +193,29 @@ li {
 	text-align:center;
 }
 #lLists {
-	width:20em;
+	width:19.5em;
+	height:23em;
+	border:1px solid green;
 	margin:auto;
+	position:relative;
+}
+#lLists.threeCols {
+	width:30em;
+	height:15em;
+}
+#lLists ul {
+	position:absolute;
+	top:0;
 }
 #lList1 {
-	float:left;
+	left:0.5em;
 }
 #lList2 {
-	float:right;
+	left:10.5em;
 }
-
+#lList3 {
+	left:20.5em;
+}
 
 .lList li {
 	width:6em;

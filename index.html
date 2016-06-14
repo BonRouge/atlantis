@@ -1023,23 +1023,33 @@ function stopAudio() {
 		lessons2 = new Array();
 	
 	
-	if(window.innerHeight > window.innerWidth){ 
-		dCols =3;
-	} 
-	else {
-		dCols = 2;
-	}
+	
+	
+	
+	
+	function buildNav() {
+	
+		if(window.innerHeight > window.innerWidth || 1==1){ 
+			dCols =3;
+			document.getElementsByTagName("BODY")[0].className="landscape";
+		} 
+		else {
+			dCols = 2;
+			
+			document.getElementsByTagName("BODY")[0].className="portrait";
+		}
 	
 	for(m=1; m<dCols+1; m++) {
 		aul = document.createElement("ul");
 		aul.id ="lList"+m;
 		aul.className = "lList";
-		document.getElementById("lLists").appendChild(aul);
+		document.getElementById("lLists").appendChild(aul); 
+		if (dCols==3) {
+			document.getElementById("lLists").className = "threeCols";
+		}
 	}
 	
 	
-	
-	function buildNav() {
 		for (i=0; i<12; i++) {
 			var nl = document.createElement("LI");
 			var nlt = document.createTextNode(isNaN(lessons[i])? lessons[i] : "Lesson "+lessons[i]);
@@ -1210,11 +1220,13 @@ function stopAudio() {
 	
 	buildNav();
 window.addEventListener('orientationchange', function() {
+	
 	lListsEl = document.getElementById("lLists");
-	while(lListsEl.hasChildren) {
+	while(lListsEl.hasChildNodes()) {
 		$("#lLists").remove(this.lastChild);
 	}
 	buildNav();
+
 	
 	});
 
