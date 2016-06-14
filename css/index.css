@@ -193,14 +193,18 @@ li {
 
 	text-align:center;
 }
+
+
+.portrait h1 {
+	width:15em;
+}
+
 /*
 .portrait h1 span {
 	display:block;
 	text-align:center;
 }
 
-.portrait h1 {
-	width:20em;
 
 
 .landscape h1 {
