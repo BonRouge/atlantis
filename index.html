@@ -52,7 +52,7 @@
 
 <body>
     <section id="home">
-        <h1>ATLANTIS <i>Hybrid</i><span> English Communication I</span> <i>Advanced</i></h1>
+        <h1>ATLANTIS <i>Hybrid</i> English Communication I <i>Advanced</i></h1>
 		
 
 		<div id="lLists">
@@ -1029,8 +1029,8 @@ function stopAudio() {
 	
 	function buildNav() {
 	
-		if(window.innerHeight > window.innerWidth){ 
-			dCols =3;
+		if(window.innerHeight < window.innerWidth){ 
+			dCols =2;
 			document.getElementsByTagName("BODY")[0].className="landscape";
 		} 
 		else {
@@ -1220,7 +1220,7 @@ function stopAudio() {
 	
 	buildNav();
 window.addEventListener('orientationchange', function() {
-	
+	//alert("Yeah");
 	lListsEl = document.getElementById("lLists");
 	while(lListsEl.hasChildNodes()) {
 		$("#lLists").remove(this.lastChild);

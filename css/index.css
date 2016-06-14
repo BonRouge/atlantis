@@ -160,6 +160,7 @@ h1, h2, h3, h4 {
 h1 {
 	font-size: x-large;
 	text-align:center;
+	margin:0.2em auto;
 }
 
 h2 {
@@ -192,10 +193,21 @@ li {
 
 	text-align:center;
 }
+/*
 .portrait h1 span {
 	display:block;
 	text-align:center;
 }
+
+.portrait h1 {
+	width:20em;
+
+
+.landscape h1 {
+	margin:0.2em auto;
+	font-size:large;
+}
+}*/
 #lLists {
 	width:19.5em;
 	height:23em;
