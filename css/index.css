@@ -194,11 +194,11 @@ li {
 	text-align:center;
 }
 
-
+/*
 .portrait h1 {
 	width:15em;
 }
-
+*/
 /*
 .portrait h1 span {
 	display:block;
@@ -219,9 +219,21 @@ li {
 	margin:auto;
 	position:relative;
 }
-#lLists.threeCols {
+.portrait #home, .portrait #lLists {
+	width:20em;
+	height:23em;
+}
+.landscape #home, .landscape #lLists  {
 	width:30em;
 	height:15em;
+}
+.landscape #home  {
+	
+	height:20em;
+}
+.portrait #home  {
+	
+	height:28em;
 }
 #lLists ul {
 	position:absolute;
@@ -300,9 +312,16 @@ width:4em;
 }
 
 
-span:hover {
+.audSpan:hover {
 	cursor:pointer;
 
+}
+
+#home {
+	border:1px solid green;
+}
+#lLists {
+	border:1px solid red;
 }
 
 
