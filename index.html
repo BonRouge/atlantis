@@ -1031,7 +1031,7 @@ function stopAudio() {
 	
 	function buildNav() {
 	
-		if(window.innerHeight < window.innerWidth || window.screen.orientation=="landscape"){ 
+		if(window.innerHeight < window.innerWidth || window.screen.orientation==="landscape-primary" ||  window.screen.orientation==="landscape-secondary" || ){ 
 			dCols =3;
 			document.getElementsByTagName("BODY")[0].className="landscape";
 			alert(window.screen.orientation);
