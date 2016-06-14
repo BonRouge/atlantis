@@ -192,6 +192,10 @@ li {
 
 	text-align:center;
 }
+.portrait h1 span {
+	display:block;
+	text-align:center;
+}
 #lLists {
 	width:19.5em;
 	height:23em;
