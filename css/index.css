@@ -182,6 +182,34 @@ li {
 	padding:0.5em;
 }
 #home {
+	height:100%;
+}
+#home h1{
+	height:10%;
+}
+#lLists {
+	position:absolute;
+	top:12%;
+	height:60%;
+	width:90%;
+	left:50%;
+	margin-left:-45%;
+}
+#lLists .lList {
+	/*height:100%;*/
+	width:46%;
+	/*border:1px solid red;*/
+}
+#lLists .lList li {
+	height:9%;
+	width:91%;
+	margin-bottom:1%;
+	text-align:center;
+	vertical-align:middle;
+	line-height:100%;
+}
+/*
+#home {
 	width:21em;
 	margin:auto;
 	
@@ -195,12 +223,12 @@ li {
 
 #lLists {
 	width:19em;
-	/*height:23em;*/
+
 	
 	margin:auto;
 	position:relative;
 }
-
+*/
 .landscape #lLists  li{
 	height:1em;
 	margin-bottom:0.1em;
@@ -211,7 +239,12 @@ li {
 #lLists ul {
 	position:absolute;
 	top:0;
+	margin-left:2%;
 }
+#lList2 {
+	right:0;
+}
+/*
 #lList1 {
 	left:0em;
 }
@@ -221,6 +254,7 @@ li {
 #lList3 {
 	left:20em;
 }
+*/
 
 .lList li {
 	width:6em;
@@ -275,6 +309,43 @@ h1 {
 	#vittrah4 span {
 		display:block;
 	}
+	
+	#home h1{
+	height:10%;
+	font-size:130%;
+	}
+		#lLists {
+			position:absolute;
+			top:12%;
+			height:80%;
+			width:60%;
+			margin-left:-30%;
+			left:50%;
+			/*border:1px solid green;*/
+			}
+		#lLists .lList {
+			height:100%;
+			/*border:1px solid blue;*/
+			width:48%;
+		}
+		#lList2 {
+			position:absolute;
+			right:0;
+		}
+		#lLists .lList li {
+			height:6%;
+			width:90%;
+			left:2%;
+			margin-bottom:1%;
+			text-align:center;
+			vertical-align:middle;
+			font-size:100%;
+		}
+
+	
+	
+	
+	/*
 	h1 {
 		font-size:140%;	
 		
@@ -295,6 +366,7 @@ h1 {
 	#home {
 		height:15em;
 	}
+	*/
 	
 }
 
