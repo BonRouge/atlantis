@@ -1030,7 +1030,7 @@ function stopAudio() {
 	
 	
 	function buildNav() {
-	
+	/*
 		if(window.innerHeight < window.innerWidth || window.screen.orientation==="landscape-primary" ||  window.screen.orientation==="landscape-secondary" ){ 
 			dCols =3;
 			document.getElementsByTagName("BODY")[0].className="landscape";
@@ -1042,6 +1042,9 @@ function stopAudio() {
 			document.getElementsByTagName("BODY")[0].className="portrait";
 						alert(window.screen.orientation);
 		}
+	*/
+	
+	dCols =2;
 	
 	for(m=1; m<dCols+1; m++) {
 		aul = document.createElement("ul");
@@ -1223,6 +1226,7 @@ function stopAudio() {
 	}
 	
 	buildNav();
+	/*
 window.addEventListener('orientationchange', function() {
 	alert("Yeah");
 	lListsEl = document.getElementById("lLists");
@@ -1233,7 +1237,7 @@ window.addEventListener('orientationchange', function() {
 
 	
 	});
-
+*/
   // Initial execution if needed
 
 

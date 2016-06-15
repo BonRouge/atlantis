@@ -20,6 +20,10 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
+i {
+	font-style: italic;
+}
+
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
       -webkit-text-size-adjust: auto;        /*    prevent webkit from resizing text to fit */
@@ -183,7 +187,7 @@ li {
 	padding:0.5em;
 }
 #home {
-	width:90%;
+	width:21em;
 	margin:auto;
 	
 }
@@ -213,7 +217,7 @@ li {
 }
 }*/
 #lLists {
-	width:19.5em;
+	width:19em;
 	height:23em;
 	
 	margin:auto;
@@ -240,13 +244,13 @@ li {
 	top:0;
 }
 #lList1 {
-	left:0.5em;
+	left:0em;
 }
 #lList2 {
-	left:10.5em;
+	left:10em;
 }
 #lList3 {
-	left:20.5em;
+	left:20em;
 }
 
 .lList li {
