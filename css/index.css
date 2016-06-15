@@ -85,12 +85,17 @@ section, #left, #right, #up {
 	#vittrah4 span {
 		display:block;
 	}
-	
+	#lLists h1 {
+		font-size:large;	
+	}
 	#lLists  li{
 	height:1em;
 	margin-bottom:0.1em;
-	font-size:120%;
-}
+	font-size:100%;
+	}
+	#lLists {
+		height:19em;
+	}
 	
 }
 
