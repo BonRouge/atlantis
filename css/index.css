@@ -198,24 +198,6 @@ li {
 	text-align:center;
 }
 
-/*
-.portrait h1 {
-	width:15em;
-}
-*/
-/*
-.portrait h1 span {
-	display:block;
-	text-align:center;
-}
-
-
-
-.landscape h1 {
-	margin:0.2em auto;
-	font-size:large;
-}
-}*/
 #lLists {
 	width:19em;
 	height:23em;
@@ -223,22 +205,14 @@ li {
 	margin:auto;
 	position:relative;
 }
-.portrait #home, .portrait #lLists {
-	width:20em;
-	height:23em;
+
+.landscape #lLists  li{
+	height:1em;
+	margin-bottom:0.1em;
+	font-size:120%;
 }
-.landscape #home, .landscape #lLists  {
-	width:30em;
-	height:15em;
-}
-.landscape #home  {
-	
-	height:20em;
-}
-.portrait #home  {
-	
-	height:28em;
-}
+
+
 #lLists ul {
 	position:absolute;
 	top:0;

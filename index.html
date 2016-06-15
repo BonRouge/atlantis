@@ -1226,18 +1226,30 @@ function stopAudio() {
 	}
 	
 	buildNav();
-	/*
+	
 window.addEventListener('orientationchange', function() {
-	alert("Yeah");
+	
+	screen.orientation.lock("portrait-primary");
+	
+	if(window.innerHeight < window.innerWidth || window.screen.orientation==="landscape-primary" ||  window.screen.orientation==="landscape-secondary" )
+	{
+		document.getElementsByTagName("BODY")[0].className="landscape";
+	}
+	else {
+	document.getElementsByTagName("BODY")[0].className="portrait";
+	}
+	/*alert("Yeah");
 	lListsEl = document.getElementById("lLists");
 	while(lListsEl.hasChildNodes()) {
 		$("#lLists").remove(this.lastChild);
 	}
 	buildNav();
-
+	*/
+	
+	
 	
 	});
-*/
+
   // Initial execution if needed
 
 
