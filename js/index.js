@@ -230,7 +230,7 @@ function stopAudio() {
 	/*  create audBits */
 	for(j=0; j<audSpans.length; j++) {
 		aud = document.createElement("audio");
-		aud.src="audio/"+audSpans[j].id+".mp3";
+		aud.src="http://atlantisenglish.com/audio/"+audSpans[j].id+".mp3";
 		aud.id = audSpans[j].id+"_aud";
 		aud.className = "audBit";
 		audSpans[j].onclick = function() {
