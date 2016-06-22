@@ -594,7 +594,7 @@ h2 {
             /* size of bullet elment */
             width: 16px;
             height: 16px;
-            background: url('../img/b05.png') no-repeat;
+            background: url('http://atlantisenglish.com/C1_Adv/app/img/b05.png') no-repeat;
             overflow: hidden;
             cursor: pointer;
 		
@@ -619,7 +619,7 @@ h2 {
             /* size of arrow element */
    
             cursor: pointer;
-            background: url('../img/a22.png') center center no-repeat;
+            background: url('http://atlantisenglish.com/C1_Adv/app/img/a22.png') center center no-repeat;
             overflow: hidden;
 			top:0px;width:40px;height:58px;
 			
