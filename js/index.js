@@ -1,3 +1,6 @@
+
+
+
   // app.initialize();
 		//var sections = new Array();
 		
@@ -334,4 +337,79 @@ function stopAudio() {
 					this.nextElementSibling.style.display=this.nextElementSibling.style.display=="block"?"none":"block";
 				}
 			}
+			
+		
 	
+	function loadPics(el,topic,num) {
+		
+	bWrap = document.getElementById(el);
+	bWrap.className="jssor";
+	iWrap = document.createElement("div");
+	iWrap.setAttribute("data-u","slides");
+	iWrap.style.width="1300px";
+	iWrap.style.height="700px";
+	iWrap.style.overflow="hidden";
+	
+	for (z=1; z<num+1;z++) {
+		aDiv = document.createElement("div");
+		aDiv.setAttribute("data-p","225.00");
+		aDiv.setAttribute("data-po","80% 55%");
+	
+		aDiv.style.display="none";
+		anImg = document.createElement("img");
+		anImg.src="img/"+topic+"/"+topic+"_"+z+".png";
+		anImg.setAttribute("data-u","image");
+		
+		aDiv.appendChild(anImg);
+		iWrap.appendChild(aDiv);
+			
+	}
+
+	bulDiv = document.createElement("div");
+	bulDiv.setAttribute("data-u","navigator");
+	bulDiv.setAttribute("data-autocenter",1);	
+	bulDiv.className="jssorb05";
+	bulDiv.style.bottom="16px";
+	bulDiv.style.right="16px";	
+		itemDiv = document.createElement("div");
+		itemDiv.style.width="16px";
+		itemDiv.style.height="16px";
+		item.Div.setAttribute("data-u","prototype");
+	bulDiv.appendChild(itemDiv);
+	iWrap.appendChild(bulDiv);
+	lSpan = document.createElement("span");
+	lSpan.setAttribute("data-u","arrowLeft");	
+	lSpan.setAttribute("data-autocenter",2);	
+	lSpan.className="jssora22l";
+	iWrap.appendChild(lSpan);
+	
+	rSpan = document.createElement("span");
+	rSpan.setAttribute("data-u","arrowRight");	
+	rSpan.setAttribute("data-autocenter",2);	
+	rSpan.className="jssora22r";
+	iWrap.appendChild(rSpan);
+	
+	bWrap.appendChild(iWrap);
+	
+	//alert(bWrap.innerHTML);
+	
+	}
+	
+	function setSlides() {
+		els = document.getElementsByClassName("jssor");
+		for (j=0; j<els.length; j++) {
+			divs = els[j].getElementsByTagName("div");
+			imgs = els[j].getElementsByTagName("img");			
+			for (k=0; k<divs.length; k++) {
+				if (divs[k].getAttribute("data-u")!="slides") {
+					divs[k].setAttribute("data-p","225.00");
+					divs[k].setAttribute("data-po","80% 55%");
+				}
+				imgs[k].setAttribute("data-u","image") ;
+			}
+		}
+	}
+	
+	setSlides();
+
+	//loadPics("jssor_1","vittra",26);

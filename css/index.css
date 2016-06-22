@@ -101,6 +101,12 @@ h1 {
 }
 */
 
+h5 {
+	font-weight:bold;
+	text-align:center;
+	margin:1em auto;
+}
+
 .event {
     border-radius:4px;
     -webkit-border-radius:4px;
@@ -162,6 +168,9 @@ h4.vTitle {
 	padding:0;
 	position:relative;
 	top:1em;
+}
+h4 {
+	font-size:130%;
 }
 
 .radius5 {
@@ -578,15 +587,17 @@ h2 {
         */
         .jssorb05 {
             position: absolute;
+			bottom:16px;right:16px;
         }
         .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
             position: absolute;
             /* size of bullet elment */
-            width: 32px;
-            height: 32px;
+            width: 16px;
+            height: 16px;
             background: url('../img/b05.png') no-repeat;
             overflow: hidden;
             cursor: pointer;
+		
         }
         .jssorb05 div { background-position: -7px -7px; }
         .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
@@ -606,12 +617,17 @@ h2 {
             display: block;
             position: absolute;
             /* size of arrow element */
-            width: 40px;
-            height: 58px;
+   
             cursor: pointer;
             background: url('../img/a22.png') center center no-repeat;
             overflow: hidden;
+			top:0px;width:40px;height:58px;
+			
+			
         }
+		.jssora22r {
+		right:12px;
+		}
         .jssora22l { background-position: -10px -31px; }
         .jssora22r { background-position: -70px -31px; }
         .jssora22l:hover { background-position: -130px -31px; }
@@ -619,9 +635,33 @@ h2 {
         .jssora22l.jssora22ldn { background-position: -250px -31px; }
         .jssora22r.jssora22rdn { background-position: -310px -31px; }
 
-		.jssor_0 {
-		width:600px;
+		/*
+		.jssor_0, .jssor_1, .jssor_2 {
+		width:35em;
 		}
+		*/
+		
+.slideShowInner {
+cursor: default; position: relative; top: 0px; left: 0px; width: 35em; overflow: hidden;	
+}
+.slideShowInner div {
+display:none;
+}
+.jssor {
+	position: relative; margin: 0 auto; top: 0px; left: 0px; width: 35em; height: 300px; overflow: hidden; visibility: hidden;
+}
+
+.jssor:first-child {
+	
+}
+div[data-u="slides"] {
+	width: 600px;  height:300px; overflow: hidden;
+}
+
+
+		
+		
+		
 		/* end jssora */
 		
 		
@@ -670,6 +710,7 @@ background: radial-gradient(ellipse at center, #6d0019 0%,#8f0222 73%, #a90329 1
 
 .cMore {
 margin:1em auto;
+width:18em;
 	padding:0.1em;
 	display:block;
 	cursor:pointer;
@@ -689,6 +730,10 @@ font-weight:normal;
 .seeMore {
 	display:none;
 	margin-bottom:2em;
+	border:1px solid gray;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow-y:auto;
+	overflow-x:hidden;
 }
 
 .qFacts dt{
@@ -696,16 +741,25 @@ font-weight:normal;
 }
 .qFacts dt, .qFacts dd {
 	display:block;
-	width:15em;
+	width:45%;
 	float:left;
 	margin-bottom:1em;
 }
 .qFacts dt{
 	clear:left;
-	padding-right:2em;
+	padding-right:1em;
 	text-align:right;
 }
 .flag {
 width:50%;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.cMap {
+	width:100%;
+	margin:1em auto;
+	display:block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
