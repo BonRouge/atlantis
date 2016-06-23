@@ -648,14 +648,14 @@ cursor: default; position: relative; top: 0px; left: 0px; width: 35em; overflow:
 display:none;
 }
 .jssor {
-	position: relative; margin: 0 auto; top: 0px; left: 0px; width: 35em; height: 300px; overflow: hidden; visibility: hidden;
+	position: relative; margin: 0 auto; top: 0px; left: 0px; width: 560px; height: 373px; overflow: hidden; visibility: hidden;
 }
 
 .jssor:first-child {
 	
 }
 div[data-u="slides"] {
-	width: 600px;  height:300px; overflow: hidden;
+	width: 560px;  height:373px; overflow: hidden;
 }
 
 
@@ -710,8 +710,8 @@ background: radial-gradient(ellipse at center, #6d0019 0%,#8f0222 73%, #a90329 1
 
 .cMore {
 margin:1em auto;
-width:18em;
-	padding:0.1em;
+width:16em;
+	padding:0.1em 0;
 	display:block;
 	cursor:pointer;
 	text-align:center;
