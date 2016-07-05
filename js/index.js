@@ -318,13 +318,15 @@ function stopAudio() {
 		tds = document.getElementsByTagName("td");
 		dLeft = true;
 		for(j=0; j<tds.length; j++) {
-			if (dLeft) {
-			tds[j].className = "speaker";
-			dLeft = false;
-			}	
-			else {
-			dLeft = true;
-			tds[j].className = "speech";
+			if (tds[j].className!="notDialog") { 
+				if (dLeft) {
+				tds[j].className = "speaker";
+				dLeft = false;
+				}	
+				else {
+				dLeft = true;
+				tds[j].className = "speech";
+				}
 			}
 		}
 	}

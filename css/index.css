@@ -22,15 +22,22 @@
 
 
 html {
-	background:url(../img/C1_Adv_bg.jpg) center top repeat-y;
+	/*background:url(../img/C1_Adv_bg2.jpg) center top repeat-y; */
+	background:url(../img/sky2.jpg) center bottom fixed no-repeat; 	
 	max-width:800px;
+		border-top:none;
+	border-bottom:none;
+	margin:auto;	
 	
-	margin:auto;
+	
+
 }
 body {
 	height:100%;
 	max-width:800px;
 	position:relative;
+
+
 	
 
 	
